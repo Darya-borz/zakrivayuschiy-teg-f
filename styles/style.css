@@ -75,6 +75,7 @@
     font-size: 14px;
     text-transform: uppercase;
     padding: 0;
+    cursor: pointer;
 }
 
     .theme-menu__button::after {
