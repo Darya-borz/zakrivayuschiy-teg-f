@@ -25,10 +25,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin: 6.5em 23.2em;
+    min-width: 375px;
+    margin-top: 102px;
 }
 
 .header {
+    max-width: 696px;
+    min-width: 371px;
     font-family: var(--press);
     background-color: var(--background-color);
     margin-bottom: 107px;
@@ -75,6 +78,7 @@
     font-size: 14px;
     text-transform: uppercase;
     padding: 0;
+    cursor: pointer;
 }
 
     .theme-menu__button::after {
@@ -117,6 +121,8 @@
         }
 
 .main {
+    max-width: 696px;
+    min-width: 371px;
     width: 100%;
     min-width: 371px;
 }
