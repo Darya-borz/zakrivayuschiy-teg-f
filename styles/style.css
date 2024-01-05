@@ -438,7 +438,7 @@ dialog {
     align-items: center;
 }
 
-@media (width <= 376px) {
+@media (width < 376px) {
     dialog {
         width: 341px;
     }
