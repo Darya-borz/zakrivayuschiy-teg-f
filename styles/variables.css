@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --inter: 'Inter';
+    --press: 'PressStart2P';
+    --inter-bold: 700;
+    --inter-normal: 400;
+    --background-color: #FFF;
+    --accent-color: #000;
+    --gragient-horizontal-color: #d3d3d3;
+    --gragient-vertical-start-color: #e7e7e7;
+    --gragient-vertical-end-color: #1a1a1a;
+    --header-title-size: 65px;
+    --header-text-size: 23px;
+    --heard-conture: black;
+    --heard: #FF0000;
+    --color-button-hover: rgb(0 0 0/ 0.6);
+    --button__text: #FFF;
+}
