@@ -4,8 +4,8 @@
     "\\fonts",
     "\\images",
     "\\scripts",
-    "\\styles"
+    "\\styles",
+    "\\svg"
   ],
-  "SelectedNode": "\\styles\\globals.css",
   "PreviewInSolutionExplorer": false
 }
