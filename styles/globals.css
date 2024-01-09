@@ -9,9 +9,9 @@
 }
 
 body {
-	min-inline-size: 375px;
-	max-inline-size: 696px;
-	margin: 0 auto;
+  min-inline-size: 375px;
+  max-inline-size: 696px;
+  margin: 0 auto;
 }
 
 h1,

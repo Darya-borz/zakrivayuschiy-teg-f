@@ -17,13 +17,13 @@
 .page {
     min-inline-size: 320px;
     min-block-size: 100dvb;
-    font-family: var(--main-font);
+    font-family: var(--main-font), sans-serif;
     font-variation-settings: 'wght' var(--main-font-normal);
     background-color: var(--bacground-color);
     color: var(--accent-color);
-    background-image: repeating-linear-gradient(90deg,var(--gragient-horizontal-color) 0 2px, rgba(0 0 0 / 0) 2px 4px), 
-                      repeating-linear-gradient(180deg, var(--gragient-horizontal-color) 0 2px, rgba(0 0 0 / 0) 2px 4px), 
-                      repeating-linear-gradient(to bottom, var(--gragient-vertical-start-color) 0.01%, var( --gragient-vertical-end-color) 100%);
+    background-image: repeating-linear-gradient(90deg, var(--gragient-horizontal-color) 0 2px, rgba(0 0 0 / 0) 2px 4px),
+        repeating-linear-gradient(180deg, var(--gragient-horizontal-color) 0 2px, rgba(0 0 0 / 0) 2px 4px),
+        repeating-linear-gradient(to bottom, var(--gragient-vertical-start-color) 0.01%, var(--gragient-vertical-end-color) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -35,7 +35,7 @@
     /*max-width: 696px;
     min-width: 371px;*/
     width: clamp(371px, 100%, 696px);
-    font-family:  var(--accent-font), fantasy;
+    font-family: var(--accent-font), fantasy;
     background-color: var(--background-color);
     margin-bottom: 40px;
     display: flex;
@@ -77,57 +77,56 @@
     background-color: transparent;
     outline: none;
     border: solid 1px transparent;
-    font-family:  var(--accent-font), fantasy;
+    font-family: var(--accent-font), fantasy;
     font-size: 14px;
     text-transform: uppercase;
     padding: 0;
     cursor: pointer;
 }
 
-    .theme-menu__button::after {
-        content: '';
-        display: block;
-        width: 0%;
-        height: 2px;
-        margin-top: 0px;
-        background-color: var(--color-button-hover);
-        transition: width 0.3s;
-        transition-timing-function: ease;
-    }
+.theme-menu__button::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 0px;
+    background-color: var(--color-button-hover);
+    transition: width 0.3s;
+    transition-timing-function: ease;
+}
 
-    .theme-menu__button:focus-visible {
-        color: var(--color-button-hover);
-    }
+.theme-menu__button:focus-visible {
+    color: var(--color-button-hover);
+}
 
-    .theme-menu__button:hover {
-        color: var(--color-button-hover);
-    }
+.theme-menu__button:hover {
+    color: var(--color-button-hover);
+}
 
-    .theme-menu__button:focus-visible::after {
-        width: 100%;
-    }
+.theme-menu__button:focus-visible::after {
+    width: 100%;
+}
 
-    .theme-menu__button:disabled {
-        pointer-events: none;
-        color: var(--color-button-hover);
-        position: relative;
-    }
+.theme-menu__button:disabled {
+    pointer-events: none;
+    color: var(--color-button-hover);
+    position: relative;
+}
 
-        .theme-menu__button:disabled::before {
-            content: '▶';
-            margin-left: 0px;
-            margin-right: 0px;
-            position: absolute;
-            left: -20px;
-            bottom: 2px;
-            animation: arrow 0.5s infinite ease-in-out alternate;
-        }
+.theme-menu__button:disabled::before {
+    content: '▶';
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    left: -20px;
+    bottom: 2px;
+    animation: arrow 0.5s infinite ease-in-out alternate;
+}
 
 .main {
     /*max-width: 696px;
     min-width: 371px;*/
     width: clamp(371px, 100%, 696px);
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 105px;
@@ -154,7 +153,7 @@
 
 .title-section {
     margin: 5px 0;
-    font-family: var(--main-font);
+    font-family: var(--main-font), sans-serif;
     font-size: 18px;
     padding: 0px 10px;
     line-height: normal;
@@ -167,6 +166,7 @@
     font-weight: var(--main-font-normal);
     line-height: 21px;
 }
+
 .image {
     border: 2px solid var(--accent-color);
 }
@@ -195,10 +195,6 @@
     opacity: 0.5;
     text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color), 1px 0 var(--background-color), 0 -1px var(--background-color);
 }
-
-
-
-
 
 @supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
     .lable {
@@ -257,17 +253,17 @@
     border: 2px solid transparent;
 }
 
-    .card__icon-button:focus {
-        outline: none;
-    }
+.card__icon-button:focus {
+    outline: none;
+}
 
-    .card__icon-button:focus-visible {
-        border-color: var(--accent-color);
-    }
+.card__icon-button:focus-visible {
+    border-color: var(--accent-color);
+}
 
 .like-icon {
     flex-shrink: 0;
-    
+
 }
 
 .card__like-button {
@@ -288,34 +284,37 @@
     cursor: pointer;
 }
 
-    .button:focus {
-        outline: none;
-    }
+.button:focus {
+    outline: none;
+}
 
-    .button:focus-visible {
-        outline: none;
-        box-shadow: 2px 2px 0px 0px var(--accent-color);
-    }
+.button:focus-visible {
+    outline: none;
+    box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
 
 
-    .button::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: var(--accent-color);
-    }
+.button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--accent-color);
+}
 
 .button__text {
-    /*text-transform: uppercase;*/
-    font-family:  var(--accent-font), fantasy;
+    font-family: var(--accent-font), fantasy;
     font-size: 14px;
     position: relative;
     z-index: 10;
-    color: var( --button-text);
+    color: var(--button-text);
     mix-blend-mode: difference;
+}
+
+.button-dialog-close .button__text {
+    text-transform: uppercase;
 }
 
 .sparks {
@@ -346,20 +345,20 @@ dialog::backdrop {
 dialog {
     background-color: var(--background-color);
     color: var(--accent-color);
-    font-family:  var(--accent-font), fantasy;
+    font-family: var(--accent-font), fantasy;
     font-size: 14px;
     width: 357px;
     padding: 36px 28px;
 
 }
 
-    dialog[open] {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 30px;
-    }
+dialog[open] {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+}
 
 .floopy-dialog {
     height: 39px;
